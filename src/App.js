@@ -3,9 +3,13 @@ import './App.css';
 import Head from './header.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+//simple greeting function with prop destructuring 
 function Greeting({ name }) {
   return <div>Hi {name}!</div>;
+}
+
+function Fruit({ name, color, quantity}){
+return <div>{name}, {color}, {quantity}</div>
 }
 
 class App extends React.Component {
@@ -41,7 +45,7 @@ handleClick(){
 
 
     return (
-      <div className="App">
+      <div>
         <Head></Head>
         <h1>Is State important to know? {this.state.answer}</h1>
         <ul>
@@ -49,6 +53,7 @@ handleClick(){
           return <li>{name}</li>
           })}
         </ul>
+        <Fruit name="apple" color="red" quantity="3"></Fruit>
         <Greeting  name="bob"></Greeting>
 
         <h1>{this.state.count}</h1>
