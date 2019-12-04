@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 
 /*  Header class with bootstrap component code.
-    Would it be better to use vanilla bootstrap?
+    Thought: Would it be better to use vanilla bootstrap?
 */
 
 class Head extends React.Component {
